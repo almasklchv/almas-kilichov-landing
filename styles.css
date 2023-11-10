@@ -176,6 +176,7 @@ li {
 }
 
 .contacts__item {
+  cursor: pointer;
   display: flex;
   align-items: center;
 }
