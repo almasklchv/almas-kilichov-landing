@@ -97,19 +97,19 @@
       <div class="contacts" id="contacts">
         <h2 class="title">Contacts</h2>
         <div class="contacts__items">
-          <div class="contacts__item">
+          <div class="contacts__item" onclick="callPhoneNumber()">
             <img src="./assets/icons/phone.png" alt="phone" />
             <p>+7 775 188 56 32</p>
           </div>
-          <div class="contacts__item">
+          <div class="contacts__item" onclick="writeToEmail()">
             <img src="./assets/icons/email.png" alt="email" />
             <p>myprojectsecret01@gmail.com</p>
           </div>
-          <div class="contacts__item">
+          <div class="contacts__item" onclick="openTelegram()">
             <img src="./assets/icons/telegram.png" alt="telegram" />
             <p>@almasklchv</p>
           </div>
-          <div class="contacts__item">
+          <div class="contacts__item" onclick="openLinkedin()">
             <img src="./assets/icons/linkedin.png" alt="linkedin" />
             <p>@almasklchv</p>
           </div>
@@ -130,6 +130,22 @@
             listElem.classList.remove("checked");
           }
         });
+      }
+
+      function callPhoneNumber() {
+        location.href = "tel:+77751885632";
+      }
+
+      function writeToEmail() {
+        location.href = "mailto:myprojectsecret01@gmail.com";
+      }
+
+      function openTelegram() {
+        location.href = "https://t.me/almasklchv";
+      }
+
+      function openLinkedin() {
+        location.href = "https://www.linkedin.com/in/almasklchv/";
       }
     </script>
   </body>
