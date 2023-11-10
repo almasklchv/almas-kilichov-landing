@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Almas Kilichov</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inknut+Antiqua:wght@400;500;700&family=Inter:wght@400;500;600;700;800;900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a
+              class="about-me-link checked"
+              href="#about-me"
+              onclick="setCheckedToListItem('about-me-link')"
+              >About me</a
+            >
+          </li>
+          <li>
+            <a
+              class="portfolio-link"
+              href="#portfolio"
+              onclick="setCheckedToListItem('portfolio-link')"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              class="contacts-link"
+              href="#contacts"
+              onclick="setCheckedToListItem('contacts-link')"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="about-me" id="about-me">
+        <div class="about-me__profile">
+          <img
+            class="about-me__profile-img"
+            src="./assets//images/my-photo-3.jpg"
+            alt="Almas Kilichov Photo"
+          />
+          <p class="about-me__profile-name">Almas Kilichov</p>
+          <p class="about-me__profile-role">Fullstack developer</p>
+        </div>
+        <div class="about-me__info">
+          <div class="about-me__info-text">
+            <p>I’m a tech guy, who focused on results and self-education.</p>
+            <p>I’ve been participated on nFactorial Incubator 2023.</p>
+            <p>
+              I developed a project on NextJS and NestJS, which uses OpenAI API.
+            </p>
+            <p>Also, I developed own videohosting with my friend.</p>
+            <p>Now I am fullstack developer at Ori.</p>
+          </div>
+          <div class="about-me__info-tech-stack">
+            <div class="tech-stack-logos">
+              <img src="./assets/icons/html.png" alt="html logo" />
+              <img src="./assets/icons/css.png" alt="css logo" />
+              <img src="./assets/icons/sass.png" alt="sass logo" />
+              <img src="./assets/icons/js.png" alt="js logo" />
+              <img src="./assets/icons/ts.png" alt="ts logo" />
+              <img src="./assets/icons/react.png" alt="react logo" />
+              <img src="./assets/icons/nest.png" alt="nest logo" />
+            </div>
+            <p>TECH STACK</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio" id="portfolio">
+        <h2 class="title">Portfolio</h2>
+        <div class="portfolio__projects">
+          <div class="portfolio__projects-info">
+            <img src="./assets/images/raisegram.png" alt="raisegram" />
+            <p>Raisegram</p>
+          </div>
+          <div class="portfolio__projects-info">
+            <img src="./assets/images/pandela.png" alt="pandela" />
+            <p>Pandela</p>
+          </div>
+        </div>
+        <a href="https://github.com/almasklchv" target="_blank">
+          <button class="btn">More on GitHub</button>
+        </a>
+      </div>
+      <div class="contacts" id="contacts">
+        <h2 class="title">Contacts</h2>
+        <div class="contacts__items">
+          <div class="contacts__item">
+            <img src="./assets/icons/phone.png" alt="phone" />
+            <p>+7 775 188 56 32</p>
+          </div>
+          <div class="contacts__item">
+            <img src="./assets/icons/email.png" alt="email" />
+            <p>myprojectsecret01@gmail.com</p>
+          </div>
+          <div class="contacts__item">
+            <img src="./assets/icons/telegram.png" alt="telegram" />
+            <p>@almasklchv</p>
+          </div>
+          <div class="contacts__item">
+            <img src="./assets/icons/linkedin.png" alt="linkedin" />
+            <p>@almasklchv</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function setCheckedToListItem(className) {
+        const listElements = document.querySelectorAll("li > a");
+        listElements.forEach((listElem) => {
+          if (
+            listElem.classList.contains(className) &&
+            !listElem.classList.contains("checked")
+          ) {
+            listElem.classList.add("checked");
+          } else if (!listElem.classList.contains(className)) {
+            listElem.classList.remove("checked");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
