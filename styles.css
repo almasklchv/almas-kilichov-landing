@@ -189,16 +189,141 @@ li {
 }
 
 .contacts__item > img {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 .contacts__items > .contacts__item:last-child > img {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
-
 @media (max-width: 1440px) {
-    .about-me, .portfolio, .contacts {
-        width: 85vw;
-    }
+  .about-me,
+  .portfolio,
+  .contacts {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 1091px) {
+  li > a {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .btn {
+    width: 188px;
+    height: 48px;
+
+    font-size: 14px;
+  }
+
+  .about-me__profile-name {
+    font-size: 18px;
+  }
+
+  .about-me__profile-role {
+    font-size: 15px;
+  }
+
+  .about-me__info-text > p {
+    font-size: 15px;
+  }
+
+  .about-me__profile-img {
+    width: 230px;
+  }
+
+  .tech-stack-logos > img {
+    width: 28px;
+  }
+
+  .about-me__info-tech-stack > p {
+    font-size: 13px;
+  }
+
+  .portfolio__projects-info > img {
+    width: 320px;
+  }
+
+  .portfolio__projects-info > p {
+    font-size: 18px;
+  }
+
+  .contacts__item > img {
+    width: 60px;
+  }
+
+  .contacts__item:last-child > img {
+    width: 75px;
+  }
+
+  .contacts__item > p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 958px) {
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 830px) {
+  ul {
+    margin-right: 20px;
+  }
+
+  .portfolio__projects-info {
+    margin-right: 0;
+  }
+
+  .portfolio__projects > .portfolio__projects-info:last-child {
+    margin-bottom: 40px;
+  }
+
+  .portfolio__projects {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 530px) {
+  li > a {
+    font-size: 14px;
+    white-space: inherit;
+  }
+
+  li {
+    margin-right: 20px;
+  }
+
+  .about-me__info-text > p {
+    font-size: 13px;
+  }
+
+  .tech-stack-logos > img {
+    width: 20px;
+    margin-right: 2px;
+  }
+
+  .about-me__info-tech-stack > p {
+    font-size: 10px;
+  }
+
+  .contacts__item > p {
+    font-size: 12px;
+  }
+
+  .contacts__item > img {
+    width: 35px;
+    margin-right: 10px;
+  }
+
+  .contacts__items .contacts__item:last-child > img {
+    width: 50px;
+    margin-right: 0px;
+  }
 }
